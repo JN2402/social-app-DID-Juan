@@ -58,14 +58,14 @@
     :root {
         --text: black;
         --background: blue;
-        --backgroundLight: hsl(211, 20%, 95%);
+        --backgroundLight: blue;
     }
     /* This gives us a black background when system is dark and we have not loaded the theme/color scheme values in JS */
     @media (prefers-color-scheme: dark) {
         :root {
             --text: white;
             --background: gray;
-            --backgroundLight: hsl(211, 20%, 20%);
+            --backgroundLight: blue;
             color-scheme: dark;
         }
     }
@@ -74,18 +74,18 @@
     html.theme--light {
         --text: black;
         --background: blue ;
-        --backgroundLight: hsl(211, 20%, 95%);
+        --backgroundLight: white;
     }
     html.theme--dark {
         --text: white;
         --background: gray;
-        --backgroundLight: hsl(211, 20%, 20%);
+        --backgroundLight: blue;
         color-scheme: dark;
     }
     html.theme--dim {
         --text: white;
         --background: gray;
-        --backgroundLight: hsl(211, 20%, 10%);
+        --backgroundLight: blue;
         color-scheme: dark;
     }
 
